@@ -1,0 +1,74 @@
+<html>
+    <head>
+<link rel="stylesheet" style="text/css" href="style.css"/>
+<script language="javascript"> 
+	function username()
+{
+ 	var uname=document.getElementById('Name').value;
+    var l=uname.length;
+    var reg=new RegExp("^[a-z A-Z]");
+	var flag1,flag2;
+if(l<8)
+{
+      document.getElementById('s1').innerHTML="username should contain min. 8 charecters ";
+document.getElementById('s1').style.color="violet";
+document.forms[0].Name.focus();
+flag1=false;
+}
+else
+	flag1=true;
+if(!reg.test(uname))
+{
+document.getElementById('s1').innerHTML="username should start with an alphabet ";
+document.getElementById('s1').style.color="violet";
+document.forms[0].Name.focus();
+flag2=false;
+}
+else
+	flag2=true;
+if(flag1&&flag2)
+{
+   document.getElementById('s1').innerHTML="valid username ";
+document.getElementById('s1').style.color="green";
+}
+}
+</script>
+</head>
+<body>
+        <div id="container">
+      
+           <div id="form" class="form">
+                <h2> <center>Login </center></h2><center><fieldset>
+        <form  action="reg_verify.php" method="POST">
+          <table id="regs">
+                  <tbody>
+                      <tr>
+                        <td>
+                            <label for="Name">Username:<br>
+                              <input type="text" name="username" id="Name" placeholder="username" onBlur="username()">
+								<span id=s1></span>
+                            </label>
+                          </td>
+                          </tr>
+                      <tr>
+                          <td>
+                            <label for="password">Password:<br>
+                              <input type="password" name="pwd" id="Name" value="" />
+                            </label>
+                              </td>
+                        </tr>
+                      <tr>
+                            <td>
+                              <input type="submit" name="login" id="Name" value="Login" />
+
+                              <input type="reset" name="reset" id="Name" value="Reset" />
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+                 </form></fieldset>
+			 </center>
+           </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+div#align {
+    padding-left: 30px;
+}
+#product_pag {
+    margin-top: 200px;
+}
+
+#less_size .container .panel panel-info {
+    width: 1100px;
+    height: 200px;
+}
+
+#panelbody_ht {
+    height: 185px;
+    padding:0px;
+}
+div#product_info {
+    margin-top: 80px;
+    position: fixed;
+    width: 1000px;
+    margin-left: 200px;
+    background-color: #d9caca;
+    height:100px;
+}
+.freepost {
+    padding-top: 80px;
+}
+.panel-body{
+	background-color: rgb(232, 235, 236);
+	}	
+#sign_up {
+    padding-top: 60px;
+}
+
+#registration {
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+#product_page {
+    margin-top: 100px;
+}
+.hidden>p {display:none;}
+
+#tab_down {
+    padding-top: 30px;
+}
+
+#par {
+    display: none;
+}
+
+#button {
+    width: 100px;
+}
+
+#pull_aside {
+
+}
+
+

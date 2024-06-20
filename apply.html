@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Apply</button>
+
+  <!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+		  <!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal">&times;</button>
+				  <h4 class="modal-title">Apply Here</h4>
+				</div>
+				<div class="modal-body">
+					<div class="bs-example">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="firstName">First Name:</label>
+								<div class="col-xs-9">
+									<input type="text" class="form-control" id="firstName" placeholder="First Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="lastName">Last Name:</label>
+								<div class="col-xs-9">
+									<input type="text" class="form-control" id="lastName" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3">Date of Birth:</label>
+								<div class="col-xs-3">
+									<select class="form-control">
+										<option>Date</option>
+									</select>
+								</div>
+								<div class="col-xs-3">
+									<select class="form-control">
+										<option>Month</option>
+									</select>
+								</div>
+								<div class="col-xs-3">
+									<select class="form-control">
+										<option>Year</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="Qualification">Qualification:</label>
+								<div class="col-xs-9">
+									<input type="text" class="form-control" id="ZipCode" placeholder="Qualification">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="inputEmail">Email:</label>
+								<div class="col-xs-9">
+									<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="phoneNumber">Phone:</label>
+								<div class="col-xs-9">
+									<input type="tel" class="form-control" id="phoneNumber" placeholder="Phone Number">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="Message">Message:</label>
+								<div class="col-xs-9">
+									<textarea rows="3" class="form-control" id="Message" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-xs-3">Gender:</label>
+								<div class="col-xs-2">
+									<label class="radio-inline">
+										<input type="radio" name="genderRadios" value="male"> Male
+									</label>
+								</div>
+								<div class="col-xs-2">
+									<label class="radio-inline">
+										<input type="radio" name="genderRadios" value="female"> Female
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-offset-3 col-xs-9">
+									<label class="checkbox-inline">
+										<input type="checkbox" value="agree">  I agree to the <a href="#">Terms and Conditions</a>.
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <div class="form-group">
+						<div class="col-xs-offset-3 col-xs-9">
+							<center><input type="submit" class="btn btn-primary" value="Apply">
+							<input type="cancel" class="btn btn-info" value="cancel"></center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
